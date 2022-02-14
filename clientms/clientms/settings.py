@@ -25,7 +25,7 @@ SECRET_KEY = '#xji%3v!mbjiudt+(5d+72v^5m6cih@p0v272vk4e!8w6sf_-x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
@@ -132,3 +132,8 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "urana94@gmail.com"
 EMAIL_HOST_PASSWORD = "lakerboy1234"
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+LOGIN_REDIRECT_URL = '/'
+
